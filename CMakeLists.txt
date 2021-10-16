@@ -337,7 +337,7 @@ endif()
 #
 ExternalProject_Add(prometheus-cpp
   PREFIX prometheus-cpp
-  URL "git://github.com/jupp0r/prometheus-cpp/archive/v0.7.0.tar.gz"
+  URL "https://github.com/jupp0r/prometheus-cpp/archive/v0.7.0.tar.gz"
   URL_HASH SHA256=93907d937fa7eab9605cba786123d3eba4e87e3dca8ecec93ff9eae4eef8de5a
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/prometheus-cpp/src/prometheus-cpp"
   CMAKE_CACHE_ARGS
@@ -363,7 +363,7 @@ ExternalProject_Add(prometheus-cpp
 ExternalProject_Add(crc32c
   PREFIX crc32c
   GIT_REPOSITORY "git://github.com/google/crc32c.git"
-  GIT_TAG "b9d6e825a1e6783195a6051639179152dac70b3b"
+  GIT_TAG "1.1.2"
   SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/crc32c/src/crc32c"
   CMAKE_CACHE_ARGS
     ${_CMAKE_ARGS_CMAKE_TOOLCHAIN_FILE}
